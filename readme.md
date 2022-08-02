@@ -10,4 +10,51 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+
+- Step 1 => Install git and docker if you don't already have them.
+
+##### Git ubuntu and Mac
+```
+//for ubuntu
+sudo apt install git
+
+//for Mac
+brew install git
+```
+##### for windows
+Download it from (https://git-scm.com/downloads)
+
+#### Install docker for Windows, Linux, Mac from here (https://docs.docker.com/engine/install/)
+
+- Step 2 => Clone the repository
+```
+git clone https://github.com/ObelusFamily/Anythink-Market-193kb
+```
+
+- Step 3 => cd into the repository and do this
+
+```
+//for ubuntu
+sudo docker-compose build
+sudo docker compose up
+
+//for Mac
+docker-compose build
+docker-compose up
+
+//for windows
+sudo gpasswd -a $USER docker
+newgrp docker
+
+docker-compose build
+docker-compose up
+```
+
+- Step 4 => Test the backend and frontend
+```
+//frontend
+localhost:3001
+
+//backend
+localhost:3000/api/ping
+```
