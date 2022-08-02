@@ -30,7 +30,7 @@ Download it from (https://git-scm.com/downloads)
 git clone https://github.com/ObelusFamily/Anythink-Market-193kb
 ```
 
-- Step 3 => cd into the repository and to this
+- Step 3 => cd into the repository and do this
 
 ```
 //for ubuntu
