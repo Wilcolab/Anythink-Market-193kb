@@ -18,7 +18,7 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 - Step 1 => Install git and docker if you don't already have them.
 
-#####Git ubuntu and Mac
+##### Git ubuntu and Mac
 ```
 //for ubuntu
 sudo apt install git
