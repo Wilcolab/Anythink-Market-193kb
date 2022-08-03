@@ -40,7 +40,7 @@ class Item extends React.Component {
 
     const markup = {
       __html: marked(this.props.item.description, { sanitize: true }),
-    };
+    }
     const canModify =
       this.props.currentUser &&
       this.props.currentUser.username === this.props.item.seller.username;
@@ -55,7 +55,7 @@ class Item extends React.Component {
                 onError={({fallbackImg}) => {
                   fallbackImg.onerror = null; // prevents looping
                   fallbackImg.src="/placeholder.png";
-        	}}
+          }}
 
                 alt={this.props.item.title}
                 className="item-img"
