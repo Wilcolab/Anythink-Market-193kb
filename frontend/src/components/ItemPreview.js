@@ -38,8 +38,8 @@ const ItemPreview = (props) => {
         alt="item"
         src={item.image}
         onError={({ currentTarget }) => {
-          currentTarget.onerror = null; // prevents looping
-          currentTarget.src="/placeholder.png";
+        currentTarget.onerror = null; // prevents looping
+        currentTarget.src="/placeholder.png";
         }}
 		
         className="card-img-top item-img"
