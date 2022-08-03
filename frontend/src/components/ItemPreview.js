@@ -38,9 +38,9 @@ const ItemPreview = (props) => {
         alt="item"
         src={item.image}
 
-	onError={({fallbackImg}) => {
-          	fallbackImg.onerror = null; // prevents looping
-          	fallbackImg.src="/placeholder.png";
+        onError={({fallbackImg}) => {
+          fallbackImg.onerror = null; // prevents looping
+          fallbackImg.src="/placeholder.png";
         }}
 
         className="card-img-top item-img"

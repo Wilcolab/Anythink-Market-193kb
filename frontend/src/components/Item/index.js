@@ -52,9 +52,9 @@ class Item extends React.Component {
               <img
                 src={this.props.item.image}
 
-	    	onError={({fallbackImg}) => {
-          		fallbackImg.onerror = null; // prevents looping
-          		fallbackImg.src="/placeholder.png";
+                onError={({fallbackImg}) => {
+          		    fallbackImg.onerror = null; // prevents looping
+          		    fallbackImg.src="/placeholder.png";
         	}}
 
                 alt={this.props.item.title}
